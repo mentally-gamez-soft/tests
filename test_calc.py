@@ -2,10 +2,10 @@
 from calculator import Calculator
 
 
-def test_multiplyADD():
+def test_add():
     x, y = 10, 2
     instance = Calculator()
-    assert instance.add(x, y) == x * y, "Add method has a problem"
+    assert instance.add(x, y) == x + y, "Add method has a problem"
 
 
 def test_substract():

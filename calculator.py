@@ -12,7 +12,7 @@ class Calculator():
         return p_val1 - p_val2
 
     # addition
-    def addition(self, p_val1: int, p_val2: int) -> int:
+    def add(self, p_val1: int, p_val2: int) -> int:
         return p_val1 + p_val2
 
     # addition
