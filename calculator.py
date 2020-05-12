@@ -1,6 +1,8 @@
 
 # class calculator
 # Test project for Travis CI
+from functools import reduce
+
 class Calculator():
 
     # Multiplication
