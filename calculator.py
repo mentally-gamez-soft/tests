@@ -4,17 +4,17 @@
 class Calculator():
 
     # Multiplication
-    def multiply(self, p_val1: int, p_val2: int) -> int:
-        return p_val1 * p_val2
+    def multiply(self, *p_val: int) -> int:
+        return reduce((lambda x, y: x * y), p_val)
 
     # substraction
-    def substract(self, p_val1: int, p_val2: int) -> int:
-        return p_val1 - p_val2
+    def substract(self, *p_val: int) -> int:
+        return reduce((lambda x, y: x - y), p_val)
 
     # addition
-    def add(self, p_val1: int, p_val2: int) -> int:
-        return p_val1 + p_val2
+    def add(self, *p_val: int) -> int:
+        return reduce((lambda x, y: x + y), p_val)
 
-    # addition
-    def divide(self, p_val1: int, p_val2: int) -> int:
-        return p_val1 / p_val2
+    # division
+    def divide(self, *p_val: int) -> int:
+        return reduce((lambda x, y: x / y), p_val)
