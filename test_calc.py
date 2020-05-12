@@ -21,6 +21,12 @@ def test_multiply():
 
 
 def test_divide():
-    x, y, z, t = 10, 2, 0, 3
+    l = [10, 2, 0, 3]
     instance = Calculator()
-    assert instance.divide(x, y, z, t) == x / y / z / t, "Divide method has a problem"
+    assert instance.divide(l) == l[0] / l[1] / l[3], "Divide method has a problem"
+
+
+test_add()
+test_substract()
+test_multiply()
+test_divide()
