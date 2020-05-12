@@ -18,5 +18,5 @@ class Calculator():
         return reduce((lambda x, y: x + y), p_val)
 
     # division
-    def divide(self, *p_val: int) -> int:
-        return reduce((lambda x, y: x / y), p_val)
+    def divide(self, *p_val: int) -> float:
+        return reduce((lambda x, y: x / y if y > 0 else x), p_val)
