@@ -25,8 +25,14 @@ def test_divide():
     instance = Calculator()
     assert instance.divide(l) == l[0] / l[1] / l[3], "Divide method has a problem"
 
+def test_concat():
+    l = [10, 2, 0, 3]
+    l = [str(i) for i in l]
+    instance = Calculator()
+    assert instance.concat(l) == "10203", "Concat method has a problem"
 
 test_add()
 test_substract()
 test_multiply()
 test_divide()
+test_concat()

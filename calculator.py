@@ -4,6 +4,7 @@
 from functools import reduce
 from operator import truediv
 
+
 class Calculator():
 
     # Multiplication
@@ -21,3 +22,6 @@ class Calculator():
     # division
     def divide(self, p_val: list) -> float:
         return reduce((lambda x, y: x / y if y != 0 else x), p_val)
+
+    def concat(self, p_val: list) -> str:
+        return(''.join(p_val))
